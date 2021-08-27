@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Body
 from fastapi.encoders import jsonable_encoder
 
-from app.server.db import (
+from server.db import (
     add_item,
     delete_item,
     retrieve_item,
@@ -9,7 +9,7 @@ from app.server.db import (
     retrieve_items,
     update_item,
 )
-from app.server.models.item import (
+from server.models.item import (
     ErrorResponseModel,
     ResponseModel,
     ItemSchema,

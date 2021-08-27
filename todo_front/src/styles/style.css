@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive;
+    caret-color: transparent;
+}
+
+.background {
+    position: inherit;
+    background: linear-gradient(248.36deg, #EABCBC 36.21%, rgba(189, 189, 189, 0) 99.16%);
+    height: 700px;
+}
+
+h1 {   
+    left: 50%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    padding: auto;
+}
+
+h2 {
+    left: 50%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    padding: auto;
+}
+
+/* .block2 {
+  vertical-align:middle;
+  display: inline-block;
+  margin: auto;
+  margin-top: 25px;
+  padding: auto;
+  width: 250px;
+  background-color: #FBF2F2;
+  border-radius: 17px;
+} */
+
+.day5 {
+  margin-top: 20px;
+    margin-left: 170px;
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    background-color: #FBF2F2;
+    border-radius: 17px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    align-items: center;
+    text-align: center;
+    color: #a18484;;
+}
+
+.day {
+  left: 50%;
+  margin-top: 20px;
+    margin-left: 45px;
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    background-color: #FBF2F2;
+    border-radius: 17px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    align-items: center;
+    text-align: center;
+    color: #a18484;;
+}
+
+/* .but {
+    border: none;
+    background: #DA9898;
+    width: 250px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    color: #FBF2F2;
+    height: 36px;
+    cursor: pointer;
+} */
+
+
+hr {
+    padding: auto;
+    margin:auto;
+    border-radius:17px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.Li {
+  margin-top: 6px;
+    align-items: center;
+    justify-content:space-between;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #b85858;
+}
+
+.Li :last-child {
+  margin-bottom: 5px;
+}
+
+#happy {
+    margin: 0px 7px;
+    margin-top: 7px;
+    float: left;
+    border: none;
+}
+
+#close {
+    margin: 4px 7px 0px 7px;
+    height:18px;
+    width:18px;
+    float: right;
+    align-items: center;
+    background: #E9BCBC;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Done {
+    text-decoration: line-through;
+    color: #af9797;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  /* для элемента label, связанного с .custom-checkbox */
+  .custom-checkbox>span {
+      float: left;
+      margin: 6px 0px 0px 10px;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  
+  /* создание в label псевдоэлемента before со следующими стилями */
+  .custom-checkbox>span::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #ffb3e6;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  
+  /* стили при наведении курсора на checkbox */
+  .custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before {
+    border-color: #ffb3e6;
+  }
+  
+  /* стили для активного чекбокса (при нажатии на него) */
+  .custom-checkbox>input:not(:disabled):active+span::before {
+    background-color: #a18484;
+    border-color: #a18484;
+  }
+  
+  /* стили для чекбокса, находящегося в фокусе */
+  .custom-checkbox>input:focus+span::before {
+    box-shadow: 0 0 0 0.2rem rgba(177, 70, 111, 0.25);
+  }
+  
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  .custom-checkbox>input:focus:not(:checked)+span::before {
+    border-color: #ff80a0;
+  }
+  
+  /* стили для чекбокса, находящегося в состоянии checked */
+  .custom-checkbox>input:checked+span::before {
+    border-color: #a18484;
+    background-color: #a18484;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+  
+  /* стили для чекбокса, находящегося в состоянии disabled */
+  .custom-checkbox>input:disabled+span::before {
+    background-color: #e9ecef;
+  }
+
+  .none {
+    left: 50%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    color: #884c4c;;
+    margin: 0px;
+    padding: auto;
+  }
+
+.addn {
+  left: 50%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    align-items: center;
+    text-align: center;
+    color: #ccb2b2;
+    margin: 2px 25px 0px 25px;
+    padding: auto;
+    line-height: 130%;
+}
+
+.forma {
+  text-align: center;
+  align-items: center;
+  border:none;
+  color: #b48a8a;
+  font-size: 11px;
+  padding: 0px 10px;
+  margin: 0px 5px 12px 5px;
+  border-radius: 5px;
+}
+
+.ok {
+  height:18px;
+  width:18px;
+  align-items: center;
+  background: #E8D2D2;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
